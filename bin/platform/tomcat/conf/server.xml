@@ -228,12 +228,12 @@
 				</JarScanner>
 			</Context>
 
-			<!-- 'acceleratorservices' extension's context for tenant 'junit' -->
-			<Context path="/acceleratorservices_junit" docBase="C:\hy2011\hybris\bin\modules\core-accelerator\acceleratorservices/web/webroot" >
+			<!-- 'uststorefront' extension's context for tenant 'master' -->
+			<Context path="/uststorefront" docBase="C:\hy2011\hybris\bin\custom\ust\uststorefront/web/webroot" useHttpOnly="true">
 				<Manager pathname="" />
 				<Loader platformHome="C:\hy2011\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,velocity-tools*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,velocity-tools*.jar, *jstl-1*.jar" />
+					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,json-taglib*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,json-taglib*.jar,*jstl-1*.jar" />
 				</JarScanner>
 			</Context>
 
@@ -252,33 +252,6 @@
 				<Loader platformHome="C:\hy2011\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >
 					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-*.jar" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'yacceleratorstorefront' extension's context for tenant 'master' -->
-			<Context path="/yacceleratorstorefront" docBase="C:\hy2011\hybris\bin\modules\base-accelerator\yacceleratorstorefront/web/webroot" useHttpOnly="true">
-				<Manager pathname="" />
-				<Loader platformHome="C:\hy2011\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,json-taglib*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,json-taglib*.jar,*jstl-1*.jar" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'ycommercewebservices' extension's context for tenant 'master' -->
-			<Context path="/rest" docBase="C:\hy2011\hybris\bin\modules\commerce-services\ycommercewebservices/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="C:\hy2011\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" />
-				</JarScanner>
-			</Context>
-
-			<!-- 'ycommercewebservices' extension's context for tenant 'junit' -->
-			<Context path="/rest_junit" docBase="C:\hy2011\hybris\bin\modules\commerce-services\ycommercewebservices/web/webroot" >
-				<Manager pathname="" />
-				<Loader platformHome="C:\hy2011\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
-				<JarScanner >
-					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,*jstl-1*.jar" />
 				</JarScanner>
 			</Context>
 
